@@ -7,7 +7,7 @@ root = Tk()
 root.geometry('1015x500')
 root.resizable(0,0)
 root.title("Rock Paper Scissor")
-root.iconbitmap('g:/RockPaperScissors/a1.ico')
+root.iconbitmap('g:/RockPaperScissors/images/game_icon.ico')
 root.configure(background="#9b59b6")
 
 
@@ -16,12 +16,12 @@ gametitle.grid(row=0, column=2)
 
 
 # picture
-rock_img = ImageTk.PhotoImage(Image.open("rock-user.png"))
-paper_img = ImageTk.PhotoImage(Image.open("paper-user.png"))
-scissor_img = ImageTk.PhotoImage(Image.open("scissors-user.png"))
-rock_img_comp = ImageTk.PhotoImage(Image.open("rock.png"))
-paper_img_comp = ImageTk.PhotoImage(Image.open("paper.png"))
-scissor_img_comp = ImageTk.PhotoImage(Image.open("scissors.png"))
+rock_img = ImageTk.PhotoImage(Image.open("images/rock-user.png"))
+paper_img = ImageTk.PhotoImage(Image.open("images/paper-user.png"))
+scissor_img = ImageTk.PhotoImage(Image.open("images/scissors-user.png"))
+rock_img_comp = ImageTk.PhotoImage(Image.open("images/rock.png"))
+paper_img_comp = ImageTk.PhotoImage(Image.open("images/paper.png"))
+scissor_img_comp = ImageTk.PhotoImage(Image.open("images/scissors.png"))
 
 # insert picture
 user_label = Label(root, image=scissor_img, bg="#9b59b6")
